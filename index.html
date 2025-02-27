@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Crypto Converter - convert your crypto</title>
+</head>
+<body>
+    <div class="container">
+        <section id="firstPage">
+            <nav>
+                <div class="logo">
+                    <h1> <span id="crypto">Crypto</span> <span id="conv">converter</span></h1>
+                </div>
+                <ul>
+                    <li> <a href= "#firstPage">Home </a> </li>
+                    <li> <a href="">About</a> </li>
+                    <li> <a href="">Contact</a> </li>
+                </ul>
+            </nav>
+        </section>
+            <div class="page">
+                <label for="crypto-options">Choose a cryptocurrency:</label>
+                <select id="crypto-options">
+                    <option value="btc">Bitcoin (BTC)</option>
+                    <option value="eth">Ethereum (ETH)</option>
+                    <option value="doge">Dogecoin (DOGE)</option>
+                </select>
+                <input type="number" id="amount" placeholder="Enter BTC amount">
+                <button id="convert-btn">Convert</button>
+
+            <!-- Result Display -->
+            <div id="conversion-result" class="result-box">USD: $0.00</div>
+            </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Crypto Converter. All rights reserved.</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

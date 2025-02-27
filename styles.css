@@ -1,0 +1,147 @@
+/* Reset Default Margin & Padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+/* General Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Navbar Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: cornflowerblue;
+    padding: 15px 20px;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    padding-left: 20px;
+}
+
+/* Styling for "Crypto" */
+#crypto {
+    color: darkorange;
+}
+
+/* Navigation List */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+/* Navigation Links */
+nav ul li {
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out; /* Smooth transition */
+}
+nav ul li a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Uses the parent element's text color */
+    font-size: 18px;
+}
+
+/* Hover Effect */
+nav ul li:hover {
+    color: darkblue;
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        padding: 10px 0;
+    }
+}
+.container{
+    height: 100vh;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px;
+    background-color: darkgrey;
+}
+select {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+input{
+    height: 37px;
+    width: 300px;
+  }
+input::placeholder{
+    color:grey;
+    font-size: 14px;
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+#crypto-options{
+    width: 300px;
+    height: 37px;
+}
+label{
+    margin-top: 20px;
+}
+@media(max-width: 349px){
+    input{
+        width: 200px;
+    }
+    #crypto-options{
+        width: 200px;
+    }
+}
+
+#convert-btn{
+    width: 200px;
+    height: 30px;
+    background-color:darkorange;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect */
+#convert-btn:hover {
+    background-color: orangered;
+    transform: scale(1.05);
+}
+
+/* Active Effect (When clicked) */
+#convert-btn:active {
+    background-color: #d35400;
+    transform: scale(0.98);
+}
